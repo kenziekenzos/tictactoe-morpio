@@ -35,9 +35,9 @@ class Board
       while true
       case_number = gets.chomp()
       if @board[case_number.to_i] == "X" || @board[case_number.to_i] == "O"
-        puts "choose another cell, this one is already taken"
+        puts "Choisis une autre case , celle ci est deja prise"
       elsif case_number.to_i > 8 || case_number.to_i < 0 || case_number != case_number.to_i.to_s
-        puts "choose a cell within the board"
+        puts "Choisis une autre case dans le tableau"
       else
       @board = @board.each_index.map { |e| e == case_number.to_i ? @board[e] = symbol : @board[e] }
       break

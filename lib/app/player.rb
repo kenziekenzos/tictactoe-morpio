@@ -5,11 +5,11 @@ class Player
   
   def initialize()
     #TO DO : doit régler son nom, sa valeur, son état de victoire
-    puts "your pseudo?"
+    puts "Bonjour, c'est quoi ton nom?"
     @name = gets.chomp()
-    puts "choose your symbol : 'X' or 'O' ?"
+    puts "Choisis ton symbole : 'X' or 'O' ?"
     @symbol = gets.chomp()
-    @game_state = "game in progress"
+    @game_state = "Jeu en cours"
   end
 
 end
